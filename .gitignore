@@ -1,0 +1,25 @@
+# API Configuration
+appsettings.json
+
+# Build results
+bin/
+obj/
+.vs/
+
+# Visual Studio
+*.user
+*.sln.docstates
+.vscode/
+
+# NuGet
+packages/
+*.nupkg
+
+# User-specific files
+*.rsuser
+*.suo
+
+# IDE
+.idea/
+*.swp
+*.swo
