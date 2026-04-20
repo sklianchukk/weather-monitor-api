@@ -15,5 +15,8 @@ namespace WeatherMonitor
 
         [JsonProperty("weather")]
         public List<WeatherInfo> Weather { get; set; } = new List<WeatherInfo>();
+        
+        [JsonProperty("wind")]
+        public WindData Wind { get; set; } = new WindData();
     }
 }

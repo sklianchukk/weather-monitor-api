@@ -50,6 +50,13 @@ namespace WeatherMonitor
         }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public string WindDisplay
+        {
+            get { return labelWind.Text; }
+            set { labelWind.Text = value; }
+        }
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string WeatherIconUrl
         {
             get { return pictureBoxIcon.ImageLocation ?? string.Empty; }

@@ -11,6 +11,7 @@ namespace WeatherMonitor
         string TemperatureDisplay { get; set; }
         string PressureDisplay { get; set; }
         string HumidityDisplay { get; set; }
+        string WindDisplay { get; set; }
         string WeatherIconUrl { get; set; }
 
         List<string> EuropeanCapitals { set; }

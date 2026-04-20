@@ -54,6 +54,7 @@ namespace WeatherMonitor
             _view.TemperatureDisplay = "Fetching...";
             _view.PressureDisplay = "-";
             _view.HumidityDisplay = "-";
+            _view.WindDisplay = "-";
 
             var weatherData = await _model.GetWeatherForCityAsync(cityName);
 
@@ -62,6 +63,7 @@ namespace WeatherMonitor
                 _view.TemperatureDisplay = $"{weatherData.Main.Temperature} °C";
                 _view.PressureDisplay = $"{weatherData.Main.Pressure} hPa";
                 _view.HumidityDisplay = $"{weatherData.Main.Humidity} %";
+                _view.WindDisplay = $"{weatherData.Wind?.Speed ?? 0} m/s";
 
                 if (weatherData.Weather != null && weatherData.Weather.Count > 0)
                 {
@@ -80,6 +82,7 @@ namespace WeatherMonitor
             _view.TemperatureDisplay = message;
             _view.PressureDisplay = "";
             _view.HumidityDisplay = "";
+            _view.WindDisplay = "";
             _view.WeatherIconUrl = "";
         }
     }
