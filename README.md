@@ -26,4 +26,4 @@ The project is structured into three main layers:
 ## 🚀 Getting Started
 1. Clone the repository:
    ```bash
-   git clone https://github.com/BohdanSklianchuk/WeatherMonitor.git
+   git clone https://github.com/sklianchukk/weather-monitor-api.git

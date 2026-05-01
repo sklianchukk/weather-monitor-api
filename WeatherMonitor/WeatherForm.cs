@@ -5,14 +5,24 @@ using System.Windows.Forms;
 
 namespace WeatherMonitor
 {
-    public partial class Form1 : Form, IView
+    public partial class WeatherForm : Form, IView
     {
-        public Form1()
+        public WeatherForm()
         {
             InitializeComponent();
 
             buttonSearch.Click += ButtonSearch_Click;
             comboBoxCapitals.SelectedIndexChanged += ComboBoxCapitals_SelectedIndexChanged;
+            textBoxCity.KeyDown += TextBoxCity_KeyDown;
+        }
+
+        private void TextBoxCity_KeyDown(object? sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Return)
+            {
+                e.Handled = true;
+                SearchByCityClicked?.Invoke();
+            }
         }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]

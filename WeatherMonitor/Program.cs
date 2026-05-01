@@ -22,7 +22,7 @@ namespace WeatherMonitor
             string baseUrl = configuration["OpenWeatherMap:BaseUrl"] ?? throw new InvalidOperationException("Base URL not found in configuration");
 
             // Create components and run the application
-            IView view = new Form1();
+            IView view = new WeatherForm();
             WeatherModel model = new WeatherModel(apiKey, baseUrl);
             Presenter presenter = new Presenter(view, model);
 

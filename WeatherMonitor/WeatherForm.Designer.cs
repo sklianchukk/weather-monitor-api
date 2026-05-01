@@ -1,6 +1,6 @@
-﻿namespace WeatherMonitor
+namespace WeatherMonitor
 {
-    partial class Form1
+    partial class WeatherForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -183,7 +183,7 @@
             labelWind.TabIndex = 13;
             labelWind.Text = "-";
             // 
-            // Form1
+            // WeatherForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -203,8 +203,8 @@
             Controls.Add(buttonSearch);
             Controls.Add(textBoxCity);
             Margin = new Padding(2);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "WeatherForm";
+            Text = "Weather Monitor";
             ((System.ComponentModel.ISupportInitialize)pictureBoxIcon).EndInit();
             ResumeLayout(false);
             PerformLayout();
